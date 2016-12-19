@@ -16,3 +16,6 @@ do
   echo "[*] Creating symlink `pwd`/$target -> $HOME/$target"
   ln -s -i `pwd`/$target $HOME/
 done
+
+echo "[*] SUCCESS"
+
