@@ -1,0 +1,48 @@
+#!/usr/bin/env python
+
+# Dummy script to extract stuff from JSON streams
+
+import json
+import sys
+
+
+def extract(obj, route):
+    if not route:
+        return obj
+    
+    token = route[0]
+    rest = route[1:]
+
+    if token == '+':
+        try:
+            children = obj.values()
+        except:
+            children = obj
+        return [extract(child, rest) for child in children]
+    
+    try:
+        token = int(token)
+    except:
+        pass
+
+    return extract(obj[token], rest)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) not in (2, 3):
+        print 'Usage: %s <PATH> [FILE]' % (sys.argv[0])
+        sys.exit(1)
+
+    path = sys.argv[1]
+    
+    if len(sys.argv) == 2:
+        input_str = raw_input()
+    
+    elif len(sys.argv) == 3:
+        with open(sys.argv[2]) as f:
+            input_str = f.read()
+
+    obj = json.loads(input_str)
+    route = path.split('.')
+
+    print json.dumps(extract(obj, route))
