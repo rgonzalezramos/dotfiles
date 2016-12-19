@@ -24,3 +24,4 @@ git submodule add git@github.com:quanganhdo/grb256.git .vim/bundle/grb256
 git submodule init
 git submodule update
 ```
+

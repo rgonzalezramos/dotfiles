@@ -527,10 +527,9 @@ nnoremap <c-g> :call SelectaIdentifier()<cr>
 " Display line numbers
 set nu
 
-" Map F8 to MakeGreen nosetest
-" This could be improved to make it work only with .py files
 
-map <F8> :w<CR>:compiler nose<CR>:MakeGreen %<CR>
+" Map F8 to run current file
+map <F8> :w\|!./%<CR>
 
 " Reduce vim-gitgutter update time
 set updatetime=250
