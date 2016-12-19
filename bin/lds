@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# local date string
+
+date +"%Y%m%d%H%M%S"
