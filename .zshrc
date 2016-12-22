@@ -13,6 +13,10 @@ HIST_STAMPS="yyyy-mm-dd"
 plugins=(git osx)
 source $ZSH/oh-my-zsh.sh
 
+# Remove oh-my-zsh aliases
+unalias gl
+unalias gp
+
 # Set preferences
 export LANG=es_ES.UTF-8
 export EDITOR='vim'
