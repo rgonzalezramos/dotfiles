@@ -7,7 +7,7 @@ set -a
 # Load oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=7
-ZSH_THEME="robbyrussell"
+ZSH_THEME="theunraveler"
 CASE_SENSITIVE="true"
 HIST_STAMPS="yyyy-mm-dd"
 plugins=(git osx)

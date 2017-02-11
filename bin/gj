@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Grep Java files under current folders
+
+needle="${@}"
+
+grep --color --recursive --include "*java" "$needle" .
+

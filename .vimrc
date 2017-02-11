@@ -533,3 +533,10 @@ map <F8> :w\|!./%<CR>
 
 " Reduce vim-gitgutter update time
 set updatetime=250
+
+set exrc
+set secure
+
+" Remove trailing spaces on save
+autocmd FileType java,python autocmd BufWritePre <buffer> %s/\s\+$//e
+
