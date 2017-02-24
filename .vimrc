@@ -316,8 +316,6 @@ endfunction
 call MapCR()
 nnoremap <leader>T :call RunNearestTest()<cr>
 nnoremap <leader>a :call RunTests('')<cr>
-nnoremap <leader>c :w\|:!script/features<cr>
-nnoremap <leader>w :w\|:!script/features --profile wip<cr>
 
 function! RunTestFile(...)
     if a:0
@@ -539,4 +537,8 @@ set secure
 
 " Remove trailing spaces on save
 autocmd FileType java,python autocmd BufWritePre <buffer> %s/\s\+$//e
+" Case-sensitive search
+set noignorecase
 
+" Buffer to clipboard
+noremap <leader>c :w !pbcopy<cr>;
