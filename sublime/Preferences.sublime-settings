@@ -1,13 +1,15 @@
 {
 	"color_scheme": "Packages/Color Scheme - Default/Blackboard.tmTheme",
 	"font_face": "Inconsolata-g for Powerline",
-	"font_size": 12,
+	"font_size": 17,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"mdpopups.use_sublime_highlighter": true,
 	"remember_open_files": false,
+	"show_definitions": false,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": true
 }

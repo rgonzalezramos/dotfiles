@@ -19,7 +19,7 @@ unalias gp
 
 # Set preferences
 export LANG=es_ES.UTF-8
-export EDITOR='vim'
+export EDITOR="vim"
 
 # Set-up path
 find ~/dev/opt -name bin | while read folder
@@ -29,5 +29,9 @@ done
 PATH="$HOME/Library/Python/2.7/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
-alias grep='grep --color'
+alias grep="grep --color"
 alias e='source `find . -name activate | head -n1`'
+alias dm="docker-machine"
+
+
+alias ebssh='ssh -i ~/.ssh/backend-blue-green.pem -lec2-user '
