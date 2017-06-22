@@ -33,5 +33,3 @@ alias grep="grep --color"
 alias e='source `find . -name activate | head -n1`'
 alias dm="docker-machine"
 
-
-alias ebssh='ssh -i ~/.ssh/backend-blue-green.pem -lec2-user '

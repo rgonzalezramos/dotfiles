@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+
+dns=`awsdns $1`
+ssh -i ~/.ssh/backend-blue-green.pem -lec2-user $dns
+
