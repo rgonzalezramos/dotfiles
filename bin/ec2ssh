@@ -4,5 +4,5 @@ set -e
 
 
 dns=`awsdns $1`
-ssh -i ~/.ssh/backend-blue-green.pem -lubuntu $dns
+ssh -i ~/.ssh/backend-blue-green.pem -oStrictHostKeyChecking=no -lubuntu $dns
 
