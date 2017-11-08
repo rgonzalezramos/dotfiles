@@ -1,0 +1,10 @@
+#!/bin/bash
+
+todofile="$HOME/todo"
+date=$(date +'%Y-%m-%d')
+line="$date: $@\n"
+
+tmpfile=$(mktemp)
+
+echo -e $line | cat - $todofile > $tmpfile && mv $tmpfile $todofile
+
