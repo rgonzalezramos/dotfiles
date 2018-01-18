@@ -545,3 +545,4 @@ noremap <leader>c :w !pbcopy<cr>;
 
 noremap <leader>r :w\|!./%<cr>
 
+noremap <leader>g :w\|!go run %<cr>
