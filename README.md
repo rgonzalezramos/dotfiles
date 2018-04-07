@@ -3,6 +3,7 @@
 The Vim config is a slightly tweaked version of [Gary Bernhardt's](https://github.com/garybernhardt/dotfiles).
 
 ## Requirements
+- homebrew
 - python + pip
 - ruby
 - zsh
@@ -11,11 +12,7 @@ The Vim config is a slightly tweaked version of [Gary Bernhardt's](https://githu
 
 ## Installation
 - Install requirements listed before
-- Install Python packages in requirements.txt
 - Run `./install.sh`
-
-## Other files
-- `.secrets` is meant to contain secret stuff, like Homebrew API key.
 
 ## Adding Vim bundles
 
