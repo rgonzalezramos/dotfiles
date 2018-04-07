@@ -1,11 +1,24 @@
 # Load oh-my-zsh
 export ZSH=$HOME/.oh-my-zsh
 export UPDATE_ZSH_DAYS=7
-ZSH_THEME=theunraveler
+
 CASE_SENSITIVE=true
 HIST_STAMPS=yyyy-mm-dd
 plugins=(git osx)
 source $ZSH/oh-my-zsh.sh
+
+# Prompt
+
+function nice_date() {
+    echo "[ $(date +'%I:%M %p') ]"
+}
+
+PROMPT='%{$fg[green]%}%m%{$reset_color%}:%c$(git_prompt_info)%{$fg[yellow]%} $ %{$reset_color%}'
+RPROMPT='%{$fg[blue]%}$(nice_date)%{$reset_color%}'
+
+ZSH_THEME_GIT_PROMPT_PREFIX='('
+ZSH_THEME_GIT_PROMPT_DIRTY='~'
+ZSH_THEME_GIT_PROMPT_CLEAN=''
 
 # Set prefs
 export LANG=es_ES.UTF-8
