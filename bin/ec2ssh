@@ -2,6 +2,6 @@
 
 set -e
 
-dns=`awsdns $1 2> /dev/null || awsname $1`
-ssh -i ~/.ssh/backend-blue-green.pem -oStrictHostKeyChecking=no -lubuntu $dns
+dns=`instance-id-to-dns $1 2> /dev/null || instance-name-to-dns $1`
+ssh -i ~/.ssh/backend-blue-green.pem -lubuntu $dns
 
