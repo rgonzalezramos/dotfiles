@@ -8,7 +8,6 @@ plugins=(git osx)
 source $ZSH/oh-my-zsh.sh
 
 # Prompt
-
 nice_date() {
     echo "[ $(date +'%I:%M %p') ]"
 }
@@ -17,7 +16,7 @@ PROMPT='%{$fg[green]%}%m%{$reset_color%}:%c$(git_prompt_info)%{$fg[yellow]%} $ %
 RPROMPT='%{$fg[blue]%}$(nice_date)%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX='('
-ZSH_THEME_GIT_PROMPT_DIRTY='~'
+ZSH_THEME_GIT_PROMPT_DIRTY='*'
 ZSH_THEME_GIT_PROMPT_CLEAN=''
 
 # Set prefs
@@ -39,6 +38,8 @@ alias grep='grep --color'
 alias e='source `find . -name activate | head -n1`'
 alias curl='curl --silent'
 alias c='clear'
+alias gl='git rev-parse --abbrev-ref HEAD | xargs git pull --rebase origin'
+alias gp='git rev-parse --abbrev-ref HEAD | xargs git push origin'
 
 # Set ZSH to vim mode (can press ESC and go to NORMAL mode)
 bindkey -v 
