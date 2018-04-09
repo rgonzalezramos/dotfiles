@@ -141,7 +141,7 @@ endfunction
 map <f8> :call RunCurrent()<cr>
 
 function! MapCR()
-  nnoremap <cr> :call RunCurrent()<cr>
+  " Not yet
 endfunction
 call MapCR()
 

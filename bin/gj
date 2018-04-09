@@ -2,7 +2,7 @@
 
 # Grep Java files under current folders
 
-needle="${@}"
+QUERY="${@}"
 
-grep --color --recursive --include "*java" "$needle" .
+grep --color --recursive --include "*java" "$QUERY" .
 
