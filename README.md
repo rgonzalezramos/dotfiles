@@ -1,6 +1,6 @@
 # dotfiles
 
-The Vim config is a slightly tweaked version of [Gary Bernhardt's](https://github.com/garybernhardt/dotfiles).
+Vim config is a slightly tweaked version of [Gary Bernhardt's](https://github.com/garybernhardt/dotfiles).
 
 ## Requirements
 - homebrew
