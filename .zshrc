@@ -40,6 +40,10 @@ alias curl='curl --silent'
 alias c='clear'
 alias gl='git rev-parse --abbrev-ref HEAD | xargs git pull --rebase origin'
 alias gp='git rev-parse --abbrev-ref HEAD | xargs git push origin'
+# UTC date string
+alias ds='date -u +"%Y%m%d%H%M%S"'
+# Local date string
+alias lds='date +"%Y%m%d%H%M%S"'
 
 # Set ZSH to vim mode (can press ESC and go to NORMAL mode)
 bindkey -v 

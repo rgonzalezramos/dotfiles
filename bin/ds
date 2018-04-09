@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# utc date string
-
-date -u +"%Y%m%d%H%M%S"
