@@ -9,7 +9,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Prompt
 
-function nice_date() {
+nice_date() {
     echo "[ $(date +'%I:%M %p') ]"
 }
 
