@@ -130,11 +130,11 @@ function! RunCurrent(...)
   let file = expand("%")
 
   if file =~# ".sh$"
-    ! bash %
+    !bash %
   elseif file =~# ".py$"
-    ! python %
+    !python %
   else
-    ! ./%
+    !./%
   end
 endfunction
 
