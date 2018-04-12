@@ -33,6 +33,9 @@ find $HOME/dev/opt -type d -name bin -maxdepth 3 | while read line
     do export PATH="$PATH:$line"
 done
 
+# Populate JAVA_HOME (only works for MacOS)
+export JAVA_HOME=`/usr/libexec/java_home`
+
 # Aliases
 alias grep='grep --color'
 alias e='source `find . -name activate | head -n1`'
