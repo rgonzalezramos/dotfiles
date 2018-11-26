@@ -133,6 +133,8 @@ function! RunCurrent(...)
     !bash %
   elseif file =~# ".py$"
     !python %
+  elseif file =~# ".go$"
+    !go run *.go
   else
     !./%
   end

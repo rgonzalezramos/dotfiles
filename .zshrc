@@ -25,8 +25,12 @@ export EDITOR=vim
 
 # Populate path 
 export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/go/bin:$PATH
 export PATH=$HOME/Library/Python/2.7/bin:$PATH
 export PATH=$HOME/bin:$PATH
+
+# Local npm modules bin
+export PATH="node_modules/.bin:$PATH"
 
 # Automatically add everything under ~/dev/opt
 find $HOME/dev/opt -type d -name bin -maxdepth 3 | while read line
@@ -52,3 +56,7 @@ alias genpass='openssl rand -base64 12'
 # Set ZSH to vim mode (can press ESC and go to NORMAL mode)
 bindkey -v 
 export KEYTIMEOUT=1
+
+# Golang
+export GOPATH="$HOME/go"
+export PATH=$PATH:$GOPATH/bin
