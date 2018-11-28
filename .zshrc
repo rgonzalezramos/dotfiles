@@ -52,6 +52,7 @@ alias ds='date -u +"%Y%m%d%H%M%S"'
 # Local date string
 alias lds='date +"%Y%m%d%H%M%S"'
 alias genpass='openssl rand -base64 12'
+alias v='vim'
 
 # Set ZSH to vim mode (can press ESC and go to NORMAL mode)
 bindkey -v 

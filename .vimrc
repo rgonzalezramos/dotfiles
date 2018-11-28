@@ -186,3 +186,6 @@ endfunction
 
 nnoremap <leader>f :call SelectaFile(".")<cr>
 
+" remove trailing whitespace using f5
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
