@@ -98,6 +98,7 @@ augroup vimrcEx
   " indent slim two spaces, not four
   autocmd! FileType *.slim set sw=2 sts=2 et
   autocmd! FileType yaml setlocal sw=2 ts=2 sts=2 et
+  autocmd! FileType ruby setlocal sw=2 ts=2 sts=2 et
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

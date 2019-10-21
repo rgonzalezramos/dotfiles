@@ -61,3 +61,12 @@ export KEYTIMEOUT=1
 # Golang
 export GOPATH="$HOME/go"
 export PATH=$PATH:$GOPATH/bin
+
+# Redis from Homebrew
+export PATH="/usr/local/opt/redis@4.0/bin:$PATH"
+
+# My own utils for NR
+export PATH="/Users/rgonzalez/dev/utils/bin:$PATH"
+
+alias j8='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home"'
+alias j11='export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.4.jdk/Contents/Home"'
